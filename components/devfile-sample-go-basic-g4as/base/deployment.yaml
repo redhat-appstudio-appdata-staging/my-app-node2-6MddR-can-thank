@@ -9,9 +9,9 @@ metadata:
     app.kubernetes.io/name: devfile-sample-go-basic-g4as
     app.kubernetes.io/part-of: my-app-node2
   name: devfile-sample-go-basic-g4as
-  namespace: ktsao-tenant
 spec:
   replicas: 1
+  revisionHistoryLimit: 0
   selector:
     matchLabels:
       app: go-app
@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-go-basic-g4as
     spec:
       containers:
-      - image: go-image:latest
+      - image: quay.io/redhat-user-workloads-stage/ktsao-tenant/my-app-node2/devfile-sample-go-basic-g4as@sha256:3f896c0077e5bf635115c403e149ff49bcb3bed3ac52807b266b1afb45a21e8e
         name: my-go
         ports:
         - containerPort: 8081

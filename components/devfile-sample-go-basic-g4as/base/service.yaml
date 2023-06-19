@@ -9,7 +9,6 @@ metadata:
     app.kubernetes.io/name: devfile-sample-go-basic-g4as
     app.kubernetes.io/part-of: my-app-node2
   name: devfile-sample-go-basic-g4as
-  namespace: ktsao-tenant
 spec:
   ports:
   - port: 8081
