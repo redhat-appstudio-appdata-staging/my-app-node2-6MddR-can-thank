@@ -9,9 +9,9 @@ metadata:
     app.kubernetes.io/name: devfile-sample-fmvs
     app.kubernetes.io/part-of: my-app-node2
   name: devfile-sample-fmvs
-  namespace: ktsao-tenant
 spec:
-  replicas: 2
+  replicas: 0
+  revisionHistoryLimit: 0
   selector:
     matchLabels:
       app: nodejs-app

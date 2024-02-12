@@ -9,10 +9,10 @@ metadata:
     app.kubernetes.io/name: devfile-sample-fmvs
     app.kubernetes.io/part-of: my-app-node2
   name: devfile-sample-fmvs
-  namespace: ktsao-tenant
 spec:
   ports:
-  - port: 3005
+  - name: "3005"
+    port: 3005
     targetPort: 3005
   selector:
     app.kubernetes.io/instance: devfile-sample-fmvs
